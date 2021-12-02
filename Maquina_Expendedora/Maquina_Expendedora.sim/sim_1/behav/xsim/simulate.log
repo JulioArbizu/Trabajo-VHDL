@@ -1,4 +1,0 @@
-Time resolution is 1 ps
-Failure: [EXITO]: Simulacion Completada
-Time: 0 ps  Iteration: 0  Process: /top_tb/estimulos  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/top_tb.vhd
-$finish called at time : 0 fs : File "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/top_tb.vhd" Line 69
