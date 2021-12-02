@@ -1,6 +1,6 @@
 Vivado Simulator v2021.1
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: D:/Vivaldi/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 277560adaf884803b43c5807b5fc8cb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fsm_tb_behav xil_defaultlib.fsm_tb -log elaborate.log 
+Running: D:/Vivaldi/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 277560adaf884803b43c5807b5fc8cb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -12,6 +12,6 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package xil_defaultlib.mi_paquete
-Compiling architecture behavioral of entity xil_defaultlib.fsm [fsm_default]
-Compiling architecture behavioral of entity xil_defaultlib.fsm_tb
-Built simulation snapshot fsm_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav

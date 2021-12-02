@@ -63,25 +63,7 @@ uut: top port map (
 
 estimulos : process 
 begin
---    reset_n <= '0' after 0.25 * CLK_PERIOD, '1' after 0.75 * CLK_PERIOD;
---    wait for 0.1 * CLK_PERIOD;
---    assert led_trabajando = '1'
---        report "[FALLO] Reset no funciona correctamente"
---        severity failure;
-    
---    wait for TEMPORIZADOR; --Espera al temporizador que representa a la maquina devolviendo el dinero
---    wait for 0.1 * CLK_PERIOD;
---    assert led_dinero_dev = '1'
---        report "[FALLO]: Error al devolver el dinero durante el reset"
---        severity failure;
-    
---    boton_central <= '1';
---    wait for 1 * CLK_PERIOD;
---    assert led_standby = '1'
---        report "[FALLO]: Error al volver al standby"
---        severity failure;
-        
-    
+
 
       test_Reset(CLK_PERIOD=>CLK_PERIOD, TEMPORIZADOR=>TEMPORIZADOR, reset_n=>reset_n,led_trabajando=>led_trabajando,boton_central=>boton_central,led_dinero_dev=>led_dinero_dev, led_standby=>led_standby);
 

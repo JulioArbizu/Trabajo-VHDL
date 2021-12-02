@@ -26,9 +26,7 @@ entity top is
         moneda_20c          : in std_logic;                     -- Moneda 20 centimos
         moneda_50c          : in std_logic;                     -- Moneda 50 centimos
         moneda_1e           : in std_logic;                     -- Moneda 1 euro
-        tarjeta             : in std_logic;                     -- Entrada NFC
         producto_SW         : in std_logic_vector(7 downto 0);  -- Switches para seleccion numero de producto en BCD
-        sw_pago             : in std_logic;                     -- Switch para elegir pago con tarjeta (false) o efectivo (true)
         display             : out std_logic_vector(6 downto 0); -- Salida a los displays
         an                  : out std_logic_vector(6 downto 0); -- Anodos de los displays
         led_cant_dinero     : out std_logic_vector(9 downto 0); -- Cantidad de dinero en led, 10 leds encendidos es 1 euro, 0 leds encendido 0 euros
