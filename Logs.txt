@@ -1,1 +1,2 @@
-27/11 Se crea proyecto.
+27/11 Se crea proyecto, se crea top, reset, fms y fms_tb.
+02/12 Esquema de componentes, fms2
