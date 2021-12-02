@@ -1,4 +1,10 @@
 Time resolution is 1 ps
+Warning: [FALLO] Reset no funciona correctamente
+Time: 4 ns  Iteration: 0  Process: /fsm_tb/estimulos  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/fsm_tb.vhd
+Warning: [FALLO]: Error al devolver el dinero durante el reset
+Time: 25 ns  Iteration: 0  Process: /fsm_tb/estimulos  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/fsm_tb.vhd
+Warning: [FALLO]: Error al volver al standby
+Time: 35 ns  Iteration: 0  Process: /fsm_tb/estimulos  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/fsm_tb.vhd
 Failure: [EXITO]: Simulacion Completada
-Time: 0 ps  Iteration: 0  Process: /top_tb/estimulos  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/top_tb.vhd
-$finish called at time : 0 fs : File "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/top_tb.vhd" Line 69
+Time: 35 ns  Iteration: 0  Process: /fsm_tb/estimulos  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/fsm_tb.vhd
+$finish called at time : 35 ns : File "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/fsm_tb.vhd" Line 94

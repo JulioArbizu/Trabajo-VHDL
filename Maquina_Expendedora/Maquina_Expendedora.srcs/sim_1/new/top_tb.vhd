@@ -2,13 +2,14 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
+use work.mi_paquete.all;
 
 
-entity fsm_tb is
-end fsm_tb;
+entity top_tb is
+end top_tb;
 
-architecture Behavioral of fsm_tb is
-COMPONENT fsm is
+architecture Behavioral of top_tb is
+COMPONENT top is
     Port (
         CLK                 : in std_logic;                     -- Señal de reloj
         reset_n             : in std_logic;                     -- Entrada reset activa a nivel bajo
@@ -17,9 +18,7 @@ COMPONENT fsm is
         moneda_20c          : in std_logic;                     -- Moneda 20 centimos
         moneda_50c          : in std_logic;                     -- Moneda 50 centimos
         moneda_1e           : in std_logic;                     -- Moneda 1 euro
-        tarjeta             : in std_logic;                     -- Entrada NFC
         producto_SW         : in std_logic_vector(7 downto 0);  -- Switches para seleccion numero de producto en BCD
-        sw_pago             : in std_logic;                     -- Switch para elegir pago con tarjeta (false) o efectivo (true)
         display             : out std_logic_vector(6 downto 0); -- Salida a los displays
         an                  : out std_logic_vector(6 downto 0); -- Anodos de los displays
         led_cant_dinero     : out std_logic_vector(9 downto 0); -- Cantidad de dinero en led, 10 leds encendidos es 1 euro, 0 leds encendido 0 euros
@@ -31,18 +30,19 @@ COMPONENT fsm is
      );
 end COMPONENT;
     signal clk : std_logic := '0';
-    signal reset_n, boton_central, moneda_10c, moneda_20c, moneda_50c, moneda_1e,sw_pago : std_logic;
-    signal tarjeta, led_pro_entregado, led_pro_ok, led_trabajando, led_dinero_dev, led_standby : std_logic;
-    signal producto_SW : std_logic_vector(3 downto 0);
+    signal reset_n, boton_central, moneda_10c, moneda_20c, moneda_50c, moneda_1e: std_logic;
+    signal led_pro_entregado, led_pro_ok, led_trabajando, led_dinero_dev, led_standby : std_logic;
+    signal producto_SW : std_logic_vector(7 downto 0);
     signal display, an: std_logic_vector(6 downto 0);
     signal led_cant_dinero : std_logic_vector(9 downto 0);
        
-    constant CLK_PERIOD : time := 10 ns;    
+    constant CLK_PERIOD : time := 10 ns;
+    constant TEMPORIZADOR : time := 20 ns;   
 begin
 
 genclk : clk <= not clk after 0.5 * CLK_PERIOD;
 
-uut: fsm port map (
+uut: top port map (
         CLK                 => clk,
         reset_n             => reset_n,
         boton_central       => boton_central,
@@ -50,9 +50,7 @@ uut: fsm port map (
         moneda_20c          => moneda_20c,
         moneda_50c          => moneda_50c,
         moneda_1e           => moneda_1e,
-        tarjeta             => tarjeta,
         producto_SW         => producto_SW,
-        sw_pago             => sw_pago,
         display             => display,
         an                  => an,
         led_cant_dinero     => led_cant_dinero,
@@ -65,18 +63,37 @@ uut: fsm port map (
 
 estimulos : process 
 begin
-    reset_n <= '0' after 0.25 * CLK_PERIOD, '1' after 0.75 * CLK_PERIOD;
-    wait for 0.1 * CLK_PERIOD;
-    assert led_trabajando = '1'
-        report "[FALLO] Reset no funciona correctamente"
-        severity failure;
+--    reset_n <= '0' after 0.25 * CLK_PERIOD, '1' after 0.75 * CLK_PERIOD;
+--    wait for 0.1 * CLK_PERIOD;
+--    assert led_trabajando = '1'
+--        report "[FALLO] Reset no funciona correctamente"
+--        severity failure;
     
+--    wait for TEMPORIZADOR; --Espera al temporizador que representa a la maquina devolviendo el dinero
+--    wait for 0.1 * CLK_PERIOD;
+--    assert led_dinero_dev = '1'
+--        report "[FALLO]: Error al devolver el dinero durante el reset"
+--        severity failure;
+    
+--    boton_central <= '1';
+--    wait for 1 * CLK_PERIOD;
+--    assert led_standby = '1'
+--        report "[FALLO]: Error al volver al standby"
+--        severity failure;
+        
     
 
-    assert false
+      test_Reset(CLK_PERIOD=>CLK_PERIOD, TEMPORIZADOR=>TEMPORIZADOR, reset_n=>reset_n,led_trabajando=>led_trabajando,boton_central=>boton_central,led_dinero_dev=>led_dinero_dev, led_standby=>led_standby);
+
+    
+
+      assert false
         report "[EXITO]: Simulacion Completada"
         severity failure;
-    end process;
 
+end process;
+
+
+        
 
 end Behavioral;
