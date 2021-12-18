@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sat Nov 27 14:04:22 2021
+# Process ID: 11188
+# Current directory: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2224 C:\Users\julio\OneDrive\Documents\GitHub\Trabajo-VHDL\Maquina_Expendedora\Maquina_Expendedora.xpr
+# Log file: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/vivado.log
+# Journal file: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora\vivado.jou
+# Running On: DESKTOP-NETJ0H3, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 34287 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.xpr
+update_compile_order -fileset sources_1
+launch_simulation

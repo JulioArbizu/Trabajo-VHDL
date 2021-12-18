@@ -65,10 +65,69 @@ estimulos : process
 begin
 
 
-      test_Reset(CLK_PERIOD=>CLK_PERIOD, TEMPORIZADOR=>TEMPORIZADOR, reset_n=>reset_n,led_trabajando=>led_trabajando,boton_central=>boton_central,led_dinero_dev=>led_dinero_dev, led_standby=>led_standby);
-
-    
-
+       test_Reset(CLK_PERIOD=>CLK_PERIOD, TEMPORIZADOR=>TEMPORIZADOR, reset_n=>reset_n,led_trabajando=>led_trabajando,led_standby=>led_standby);
+       
+       wait for 1 * CLK_PERIOD;
+       producto_SW <= ("11111111");
+       wait for 0.01*CLK_PERIOD;
+       boton_central<= '1';
+       wait for 1 * CLK_PERIOD;
+       assert led_standby = '1'
+        report "[ERROR] No funciona correctamente la seleccion del producto, codigo incorrecto ha sido detectado como correcto"
+        severity warning;
+        
+        wait for 1*CLK_PERIOD;
+        producto_SW <= ("00010000");
+        wait for 0.01*CLK_PERIOD;
+        boton_central<= '1';
+        wait for 1 * CLK_PERIOD;
+        assert led_pro_ok = '1'
+        report "[ERROR] No funciona correctamente la seleccion del producto, codigo incorrecto ha sido detectado como correcto"
+        severity warning;
+        assert led_standby = '0'
+        report "[ERROR] No se ha pasado al estado de producto seleccionado"
+        severity warning;
+        
+        moneda_50c <= '1';
+        wait for 1*CLK_PERIOD;
+        moneda_50c <='0';
+        moneda_1e <= '1';
+        assert led_cant_dinero = "0000011111"
+            report "[ERROR] No funciona el contador de dinero 1"
+            severity warning;
+        wait for 1*CLK_PERIOD;
+        moneda_1e <= '0';
+        assert led_cant_dinero = "1111111111"
+            report "[ERROR] No funciona el contador de dinero 2"
+            severity warning;
+                    
+        wait for 1*CLK_PERIOD;
+        assert led_pro_ok = '0'
+            report "[ERROR] No se ha apagado el led de prod ok"
+            severity warning;
+        assert led_trabajando = '1'
+            report "[ERROR] No se ha encendido el led trabajando"
+            severity warning;         
+            
+        wait for TEMPORIZADOR;
+        wait for 1*CLK_PERIOD;
+        assert led_trabajando = '0'
+            report "[ERROR] No se ha apagado el led trabajando"
+            severity warning; 
+        assert led_pro_entregado = '1'
+            report "[ERROR] No se ha encendido el led producto entregado"
+            severity warning;       
+        assert led_dinero_dev = '1'
+            report "[ERROR] No se ha encendido el led dinero devuelto"
+            severity warning;                
+        assert led_cant_dinero = "0000000000"
+            report "[ERROR] No se devuelve el dinero correctamente"
+            severity warning;       
+        wait for 1*CLK_PERIOD;
+        assert led_standby = '1'
+            report "[ERROR]: Error al volver al standby"
+            severity warning;        
+        
       assert false
         report "[EXITO]: Simulacion Completada"
         severity failure;

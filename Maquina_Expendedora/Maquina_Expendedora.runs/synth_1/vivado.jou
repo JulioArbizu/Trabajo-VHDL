@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Dec 18 13:23:12 2021
+# Process ID: 6232
+# Current directory: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.runs/synth_1
+# Command line: vivado.exe -log fsm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fsm.tcl
+# Log file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.runs/synth_1/fsm.vds
+# Journal file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fsm.tcl -notrace
