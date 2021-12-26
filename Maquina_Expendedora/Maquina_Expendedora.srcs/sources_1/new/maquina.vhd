@@ -1,23 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 26.12.2021 09:50:00
--- Design Name: 
--- Module Name: temporizador - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -36,10 +16,9 @@ entity maquina is
     producto_ok : in std_logic;
     dinero_ok : in std_logic;
     clk : in std_logic;
-    clk_1Hz : in std_logic;
+    clk_2Hz : in std_logic;
     dinero : in unsigned;
     reset_n : in std_logic;
-    producto_entregado : out std_logic;
     dinero_devuelto : out std_logic;
     led_standby : out std_logic;
     led_prod_entregado : out std_logic;

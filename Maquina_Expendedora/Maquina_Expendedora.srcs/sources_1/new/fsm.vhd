@@ -1,82 +1,140 @@
 library IEEE;
+use IEEE.NUMERIC_STD.ALL;
 use IEEE.std_logic_1164.all;
 
 entity fsm is
     port (
-        CLK                 : in std_logic;                     -- Señal de reloj
-        reset_n             : in std_logic;                     -- Entrada reset activa a nivel bajo
-        boton_central       : in std_logic;                     -- Utilaza para seleccion del producto y modo de pago con tarjeta
-        moneda_10c          : in std_logic;                     -- Moneda 10 centimos
-        moneda_20c          : in std_logic;                     -- Moneda 20 centimos
-        moneda_50c          : in std_logic;                     -- Moneda 50 centimos
-        moneda_1e           : in std_logic;                     -- Moneda 1 euro
-        tarjeta             : in std_logic;                     -- Entrada NFC
-        producto_SW         : in std_logic_vector(7 downto 0);  -- Switches para seleccion numero de producto en BCD
-        sw_pago             : in std_logic;                     -- Switch para elegir pago con tarjeta (false) o efectivo (true)
-        display             : out std_logic_vector(6 downto 0); -- Salida a los displays
-        an                  : out std_logic_vector(6 downto 0); -- Anodos de los displays
-        led_cant_dinero     : out std_logic_vector(9 downto 0); -- Cantidad de dinero en led, 10 leds encendidos es 1 euro, 0 leds encendido 0 euros
-        led_pro_entregado   : out std_logic;                    -- true producto entregado, 0 producto no entregado
-        led_pro_ok          : out std_logic;                    -- true producto elegido correctamente
-        led_trabajando      : out std_logic;                    -- true si la maquina está procesando, o bien esperando al pago, devolviendo o entregando producto
-        led_dinero_dev      : out std_logic;                     -- true si se ha devuelto correctamente el pago
-        led_standby         : out std_logic                     -- true si se esta en el estado de standby
+        CLK                     : in std_logic;                   -- Señal de reloj
+        reset_n                 : in std_logic;                   -- Entrada reset activa a nivel bajo
+        producto_ok             : in std_logic;                   -- Entrada de que el producto se ha seleccionado correctamente
+        dinero_ok               : in std_logic;                   -- Entrada de que se ha superado 1 euro
+        dinero                  : in unsigned;                    -- Entrada que representa la cantidad de dinero
+        temporizador2s          : in std_logic;                   -- Entrada del temporizador
+        temporizador4s          : in std_logic;                   -- Entrada del temporizador
+        dinero_devuelto         : out std_logic;                  -- Salida que reprenta que se ha devuelto el producto
+        enable_temporizador2s   : out std_logic;                  -- Salida para activar el temporizador de 2 segundos
+        enable_temporizador4s   : out std_logic;                  -- Salida para activar el temporizador de 4 segundos
+        led_pro_entregado       : out std_logic;                  -- true producto entregado, 0 producto no entregado
+        led_pro_ok              : out std_logic;                  -- true producto elegido correctamente
+        led_trabajando          : out std_logic;                  -- true si la maquina está procesando, o bien esperando al pago, devolviendo o entregando producto
+        led_dinero_dev          : out std_logic;                  -- true si se ha devuelto correctamente el pago
+        led_standby             : out std_logic                   -- true si se esta en el estado de standby
  );
 end fsm;
 
 architecture behavioral of fsm is
-    type STATES is (S0, S1, S2, S3);
-    signal current_state: STATES := S0;
+    type STATES is (S0_Standby, S1_ProdSelecc, S2_Entregando, S3_Finalizado, S4_Devolviendo, S5_Devuelto);
+    signal current_state: STATES := S0_Standby;
     signal next_state: STATES;
 begin
     state_register: process (reset_n, CLK)
     begin
         if reset_n = '0' then
-            current_state <= S0;
+            current_state <= S4_Devolviendo;
         elsif rising_edge(clk) then
             current_state <= next_state;
         end if;
     end process;
 
-    nextstate_decod: process (boton_central, current_state)
+    nextstate_decod: process (producto_ok,dinero_ok,temporizador2s, temporizador4s, current_state)
     begin
         next_state <= current_state;
         case current_state is
-           when S0 =>
-             --if PUSHBUTTON = '1' then
-             --next_state <= S1;
-             --end if;
-           when S1 =>
-             --if PUSHBUTTON = '1' then
-             --next_state <= S2;
-             --end if;
-           when S2 =>
-             --if PUSHBUTTON = '1' then
-             --next_state <= S3;
-             --end if;
-           when S3 =>
-             --if PUSHBUTTON = '1' then
-             --next_state <= S0;
-             --end if;
+           when S0_Standby =>
+             if producto_ok = '1' then
+                next_state <= S1_ProdSelecc;
+             end if;
+           when S1_ProdSelecc =>
+             if dinero_ok = '1' then
+                next_state <= S2_Entregando;
+             end if;
+           when S2_Entregando =>
+             if temporizador4s = '1' then
+                next_state <= S3_Finalizado;
+             end if;
+           when S3_Finalizado =>
+             if temporizador2s = '1' then
+                next_state <= S0_Standby;
+             end if;
+            when S4_Devolviendo =>
+             if temporizador2s = '1' then
+                next_state <= S4_Devolviendo;
+             end if;
+            when S5_Devuelto =>
+             if temporizador2s = '1' then
+                next_state <= S0_Standby;
+             end if;
            when others =>
-             --next_state <= S0;
+            next_state <= S4_Devolviendo;
         end case;
     end process;
     
     output_decod: process (current_state)
     begin
-        --LIGHT <= (OTHERS => '0');
         case current_state is
-         when S0 =>
-           --LIGHT(0) <= '1';
-         when S1 =>
-            --LIGHT(1) <= '1';
-         when S2 =>
-            --LIGHT(2) <= '1';
-         when S3 =>
-            --LIGHT(3) <= '1';
+         when S0_Standby =>
+            dinero_devuelto <= '0';
+            enable_temporizador2s <= '0';
+            enable_temporizador4s <= '0';
+            led_pro_entregado <= '0';
+            led_pro_ok <= '0';
+            led_trabajando <= '0';
+            led_dinero_dev <= '0';
+            led_standby <= '1';
+         when S1_ProdSelecc =>
+            dinero_devuelto <= '0';
+            enable_temporizador2s <= '0';
+            enable_temporizador4s <= '0';
+            led_pro_entregado <= '0';
+            led_pro_ok <= '1';
+            led_trabajando <= '0';
+            led_dinero_dev <= '0';
+            led_standby <= '0';
+         when S2_Entregando =>
+            dinero_devuelto <= '0';
+            enable_temporizador2s <= '0';
+            enable_temporizador4s <= '1';
+            led_pro_entregado <= '0';
+            led_pro_ok <= '0';
+            led_trabajando <= '1';
+            led_dinero_dev <= '0';
+            led_standby <= '0';
+         when S3_Finalizado =>
+            dinero_devuelto <= '0';
+            enable_temporizador2s <= '1';
+            enable_temporizador4s <= '0';
+            led_pro_entregado <= '1';
+            led_pro_ok <= '0';
+            led_trabajando <= '0';
+            led_dinero_dev <= '1';
+            led_standby <= '0';
+         when S4_Devolviendo =>
+            dinero_devuelto <= '0';
+            enable_temporizador2s <= '1';
+            enable_temporizador4s <= '0';
+            led_pro_entregado <= '0';
+            led_pro_ok <= '0';
+            led_trabajando <= '1';
+            led_dinero_dev <= '0';
+            led_standby <= '0';
+        when S5_Devuelto =>
+            dinero_devuelto <= '0';
+            enable_temporizador2s <= '1';
+            enable_temporizador4s <= '0';
+            led_pro_entregado <= '0';
+            led_pro_ok <= '0';
+            led_trabajando <= '0';
+            led_dinero_dev <= '1';
+            led_standby <= '0';
          when others =>
-            --LIGHT <= (OTHERS => '0');
+            dinero_devuelto <= '0';
+            enable_temporizador2s <= '0';
+            enable_temporizador4s <= '0';
+            led_pro_entregado <= '1';
+            led_pro_ok <= '1';
+            led_trabajando <= '1';
+            led_dinero_dev <= '1';
+            led_standby <= '1';          
         end case;
     end process;
 end behavioral;
