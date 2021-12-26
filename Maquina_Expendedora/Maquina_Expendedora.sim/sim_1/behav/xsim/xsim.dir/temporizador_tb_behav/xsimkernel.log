@@ -1,0 +1,4 @@
+Running: xsim.dir/temporizador_tb_behav/xsimk.exe -simmode gui -wdb temporizador_tb_behav.wdb -simrunnum 0 -socket 55645
+Design successfully loaded
+Design Loading Memory Usage: 6668 KB (Peak: 6668 KB)
+Design Loading CPU Usage: 46 ms

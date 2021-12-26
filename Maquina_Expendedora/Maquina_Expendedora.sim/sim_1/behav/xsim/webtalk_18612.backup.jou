@@ -2,10 +2,10 @@
 # Webtalk v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Wed Dec  1 22:10:08 2021
-# Process ID: 18960
+# Start of session at: Sat Dec 25 17:45:19 2021
+# Process ID: 18612
 # Current directory: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/xsim.dir/fsm_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/xsim.dir/IntroducirProducto_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
