@@ -43,6 +43,7 @@ begin
             when others =>
                 comprobacion2 := false;
         end case;
+        -- Si ambas comprobaciones son correctas el codigo BCD introducido es válido
         if (comprobacion1 and comprobacion2) then
             comprobacion_ok <= '1';
         else

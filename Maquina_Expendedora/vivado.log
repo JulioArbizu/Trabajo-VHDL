@@ -2,10 +2,10 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sat Dec 18 18:10:23 2021
-# Process ID: 3624
+# Start of session at: Sat Dec 25 17:05:05 2021
+# Process ID: 11760
 # Current directory: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11588 D:\TRABAJOS SED\GitHub\Trabajo-VHDL\Maquina_Expendedora\Maquina_Expendedora.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9816 D:\TRABAJOS SED\GitHub\Trabajo-VHDL\Maquina_Expendedora\Maquina_Expendedora.xpr
 # Log file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/vivado.log
 # Journal file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora\vivado.jou
 #-----------------------------------------------------------
@@ -17,115 +17,83 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivaldi/Vivado/2021.1/data/ip'.
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1458.637 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1121.266 ; gain = 0.000
 update_compile_order -fileset sources_1
-close [ open {D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/Antirebotes.vhd} w ]
-add_files {{D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/Antirebotes.vhd}}
-close [ open {D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/sincronizador.vhd} w ]
-add_files {{D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/sincronizador.vhd}}
-close [ open {D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/edgeDetecteor.vhd} w ]
-add_files {{D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/edgeDetecteor.vhd}}
-update_compile_order -fileset sources_1
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
-Starting synth_design
-Using part: xc7a100tcsg324-1
-Top: IntroducirProducto
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1543.812 ; gain = 85.176
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'IntroducirProducto' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/IntroducirProducto.vhd:22]
-WARNING: [Synth 8-614] signal 'boton_central' is read in the process but is not in the sensitivity list [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/IntroducirProducto.vhd:53]
-WARNING: [Synth 8-614] signal 'comprobacion_ok' is read in the process but is not in the sensitivity list [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/IntroducirProducto.vhd:53]
-INFO: [Synth 8-256] done synthesizing module 'IntroducirProducto' (1#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/IntroducirProducto.vhd:22]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1593.500 ; gain = 134.863
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1593.500 ; gain = 134.863
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1593.500 ; gain = 134.863
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1593.500 ; gain = 0.000
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:25]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:26]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:27]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:28]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:28]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:33]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:34]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:34]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:35]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:35]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:36]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:36]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:37]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:38]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:39]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:40]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:40]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'CA'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:60]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'CB'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:61]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:61]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'CC'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:62]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:62]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'CD'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:63]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:63]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'CE'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:64]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:64]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'CF'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:65]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:65]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'CG'. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:66]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc:66]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc]
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1646.641 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1750.062 ; gain = 291.426
-5 Infos, 21 Warnings, 19 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 1750.062 ; gain = 291.426
-set_property top antirebotes [current_fileset]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'antirebotes'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Vivaldi/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'antirebotes' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj antirebotes_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/edgeDetecteor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'EDGEDTCTR'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/sincronizador.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SYNCHRNZR'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/Antirebotes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'antirebotes'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
+"xelab -wto 277560adaf884803b43c5807b5fc8cb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot antirebotes_behav xil_defaultlib.antirebotes -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivaldi/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 277560adaf884803b43c5807b5fc8cb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot antirebotes_behav xil_defaultlib.antirebotes -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.SYNCHRNZR [synchrnzr_default]
+Compiling architecture behavioral of entity xil_defaultlib.EDGEDTCTR [edgedtctr_default]
+Compiling architecture structural of entity xil_defaultlib.antirebotes
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.266 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1121.266 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+set_property top IntroducirProducto_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'IntroducirProducto_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Vivaldi/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'IntroducirProducto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj IntroducirProducto_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
+"xelab -wto 277560adaf884803b43c5807b5fc8cb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot IntroducirProducto_tb_behav xil_defaultlib.IntroducirProducto_tb -log elaborate.log"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivaldi/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 277560adaf884803b43c5807b5fc8cb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot IntroducirProducto_tb_behav xil_defaultlib.IntroducirProducto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.266 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+update_compile_order -fileset sim_1
+set_property top IntroducirProducto [current_fileset]
 update_compile_order -fileset sources_1
 launch_simulation
 Command: launch_simulation 
@@ -139,8 +107,6 @@ INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
 "xvhdl --incr --relax -prj IntroducirProducto_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/IntroducirProducto.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'IntroducirProducto'
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
@@ -151,16 +117,8 @@ Running: D:/Vivaldi/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 277560ada
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.IntroducirProducto [introducirproducto_default]
-Compiling architecture behavioral of entity xil_defaultlib.introducirproducto_tb
-Built simulation snapshot IntroducirProducto_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -183,11 +141,9 @@ Time: 27500 ps  Iteration: 0  Process: /IntroducirProducto_tb/estimulos  File: D
 $finish called at time : 27500 ps : File "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/IntroducirProducto_tb.vhd" Line 80
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'IntroducirProducto_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1774.000 ; gain = 12.223
-set_property top antirebotes [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-update_compile_order -fileset sim_1
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1121.266 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1121.266 ; gain = 0.000
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 18 19:26:26 2021...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 25 17:45:21 2021...
