@@ -2,31 +2,17 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sat Dec 25 17:05:05 2021
-# Process ID: 11760
+# Start of session at: Sun Dec 26 09:55:55 2021
+# Process ID: 21256
 # Current directory: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9816 D:\TRABAJOS SED\GitHub\Trabajo-VHDL\Maquina_Expendedora\Maquina_Expendedora.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15380 D:\TRABAJOS SED\GitHub\Trabajo-VHDL\Maquina_Expendedora\Maquina_Expendedora.xpr
 # Log file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/vivado.log
 # Journal file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.xpr}
 update_compile_order -fileset sources_1
-launch_simulation
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top IntroducirProducto_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/temporizador_tb.vhd} w ]
+add_files -fileset sim_1 {{D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/temporizador_tb.vhd}}
 update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top IntroducirProducto [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
-launch_simulation
-source IntroducirProducto_tb.tcl
-close_sim

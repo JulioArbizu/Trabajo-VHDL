@@ -2,10 +2,10 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sat Dec 25 17:05:05 2021
-# Process ID: 11760
+# Start of session at: Sun Dec 26 09:55:55 2021
+# Process ID: 21256
 # Current directory: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9816 D:\TRABAJOS SED\GitHub\Trabajo-VHDL\Maquina_Expendedora\Maquina_Expendedora.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15380 D:\TRABAJOS SED\GitHub\Trabajo-VHDL\Maquina_Expendedora\Maquina_Expendedora.xpr
 # Log file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/vivado.log
 # Journal file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora\vivado.jou
 #-----------------------------------------------------------
@@ -17,133 +17,9 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivaldi/Vivado/2021.1/data/ip'.
-open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1121.266 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1135.402 ; gain = 0.000
 update_compile_order -fileset sources_1
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'antirebotes'
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'D:/Vivaldi/Vivado/2021.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'antirebotes' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj antirebotes_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/edgeDetecteor.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'EDGEDTCTR'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/sincronizador.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'SYNCHRNZR'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/Antirebotes.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'antirebotes'
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
-"xelab -wto 277560adaf884803b43c5807b5fc8cb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot antirebotes_behav xil_defaultlib.antirebotes -log elaborate.log"
-Vivado Simulator v2021.1
-Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: D:/Vivaldi/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 277560adaf884803b43c5807b5fc8cb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot antirebotes_behav xil_defaultlib.antirebotes -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.SYNCHRNZR [synchrnzr_default]
-Compiling architecture behavioral of entity xil_defaultlib.EDGEDTCTR [edgedtctr_default]
-Compiling architecture structural of entity xil_defaultlib.antirebotes
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.266 ; gain = 0.000
-INFO: [Common 17-344] 'run_program' was cancelled
-INFO: [Vivado 12-5357] 'elaborate' step aborted
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1121.266 ; gain = 0.000
-INFO: [Common 17-344] 'launch_simulation' was cancelled
-set_property top IntroducirProducto_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'IntroducirProducto_tb'
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'D:/Vivaldi/Vivado/2021.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'IntroducirProducto_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj IntroducirProducto_tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
-"xelab -wto 277560adaf884803b43c5807b5fc8cb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot IntroducirProducto_tb_behav xil_defaultlib.IntroducirProducto_tb -log elaborate.log"
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-Vivado Simulator v2021.1
-Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: D:/Vivaldi/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 277560adaf884803b43c5807b5fc8cb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot IntroducirProducto_tb_behav xil_defaultlib.IntroducirProducto_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [Common 17-344] 'run_program' was cancelled
-INFO: [Vivado 12-5357] 'elaborate' step aborted
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.266 ; gain = 0.000
-INFO: [Common 17-344] 'launch_simulation' was cancelled
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/temporizador_tb.vhd} w ]
+add_files -fileset sim_1 {{D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/temporizador_tb.vhd}}
 update_compile_order -fileset sim_1
-set_property top IntroducirProducto [current_fileset]
-update_compile_order -fileset sources_1
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'IntroducirProducto_tb'
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'D:/Vivaldi/Vivado/2021.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'IntroducirProducto_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj IntroducirProducto_tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
-"xelab -wto 277560adaf884803b43c5807b5fc8cb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot IntroducirProducto_tb_behav xil_defaultlib.IntroducirProducto_tb -log elaborate.log"
-Vivado Simulator v2021.1
-Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: D:/Vivaldi/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 277560adaf884803b43c5807b5fc8cb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot IntroducirProducto_tb_behav xil_defaultlib.IntroducirProducto_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "IntroducirProducto_tb_behav -key {Behavioral:sim_1:Functional:IntroducirProducto_tb} -tclbatch {IntroducirProducto_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source IntroducirProducto_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: [EXITO] Se ha completado la simulacion correctamente
-Time: 27500 ps  Iteration: 0  Process: /IntroducirProducto_tb/estimulos  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/IntroducirProducto_tb.vhd
-$finish called at time : 27500 ps : File "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/IntroducirProducto_tb.vhd" Line 80
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'IntroducirProducto_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1121.266 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1121.266 ; gain = 0.000
-exit
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 25 17:45:21 2021...
