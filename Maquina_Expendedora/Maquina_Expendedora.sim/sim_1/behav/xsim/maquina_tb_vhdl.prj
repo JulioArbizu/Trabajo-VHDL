@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Maquina_Expendedora.srcs/sources_1/new/fsm.vhd" \
+"../../../../Maquina_Expendedora.srcs/sources_1/new/maquina.vhd" \
+"../../../../Maquina_Expendedora.srcs/sources_1/new/temporizador.vhd" \
+"../../../../Maquina_Expendedora.srcs/sim_1/new/maquina_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -8,7 +8,7 @@ entity fsm is
         reset_n                 : in std_logic;                   -- Entrada reset activa a nivel bajo
         producto_ok             : in std_logic;                   -- Entrada de que el producto se ha seleccionado correctamente
         dinero_ok               : in std_logic;                   -- Entrada de que se ha superado 1 euro
-        dinero                  : in unsigned;                    -- Entrada que representa la cantidad de dinero
+        --dinero                  : in unsigned;                    -- Entrada que representa la cantidad de dinero
         temporizador2s          : in std_logic;                   -- Entrada del temporizador
         temporizador4s          : in std_logic;                   -- Entrada del temporizador
         dinero_devuelto         : out std_logic;                  -- Salida que reprenta que se ha devuelto el producto
@@ -58,10 +58,10 @@ begin
              end if;
             when S4_Devolviendo =>
              if temporizador2s = '1' then
-                next_state <= S4_Devolviendo;
+                next_state <= S5_Devuelto;
              end if;
             when S5_Devuelto =>
-             if temporizador2s = '1' then
+             if temporizador4s = '1' then
                 next_state <= S0_Standby;
              end if;
            when others =>
@@ -119,8 +119,8 @@ begin
             led_standby <= '0';
         when S5_Devuelto =>
             dinero_devuelto <= '0';
-            enable_temporizador2s <= '1';
-            enable_temporizador4s <= '0';
+            enable_temporizador2s <= '0';
+            enable_temporizador4s <= '1';
             led_pro_entregado <= '0';
             led_pro_ok <= '0';
             led_trabajando <= '0';

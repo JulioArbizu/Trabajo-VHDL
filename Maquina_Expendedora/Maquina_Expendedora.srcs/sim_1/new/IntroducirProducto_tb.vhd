@@ -51,7 +51,7 @@ begin
         report "[ERROR] Se ha activado la salida sin activar el boton"
         severity failure;
         
-    SW <= "10010000";
+    SW <= "00010000";
     boton_central <= '1';
     wait for 0.5*CLK_PERIOD;
     boton_central <= '0';
@@ -67,7 +67,7 @@ begin
         report "[ERROR] Se ha introducido un codigo incorrecto y la salida se ha activado"
         severity failure;  
         
-    SW <= "10010111";
+    SW <= "00010111";
     boton_central <= '1';
     wait for 0.5*CLK_PERIOD;
     boton_central <= '0';

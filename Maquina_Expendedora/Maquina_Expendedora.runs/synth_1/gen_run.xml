@@ -3,6 +3,8 @@
   <File Type="PA-TCL" Name="fsm.tcl"/>
   <File Type="REPORTS-TCL" Name="fsm_reports.tcl"/>
   <File Type="RDS-RDS" Name="fsm.vds"/>
+  <File Type="RDS-UTIL" Name="fsm_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fsm_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="fsm.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>

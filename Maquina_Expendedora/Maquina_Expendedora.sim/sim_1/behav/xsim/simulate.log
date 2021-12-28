@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: [EXITO] Simulacion completada correctamente
+Time: 13870 ms  Iteration: 0  Process: /maquina_tb/stimulus  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/maquina_tb.vhd
+$finish called at time : 13870 ms : File "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/maquina_tb.vhd" Line 109

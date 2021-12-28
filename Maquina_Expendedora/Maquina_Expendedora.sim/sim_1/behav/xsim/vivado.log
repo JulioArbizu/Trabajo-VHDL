@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Dec 27 11:37:03 2021
+# Process ID: 17676
+# Current directory: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7372 D:\TRABAJOS SED\GitHub\Trabajo-VHDL\Maquina_Expendedora\Maquina_Expendedora.sim\sim_1\behav\xsim\fsm_tb_behav.wdb
+# Log file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/vivado.log
+# Journal file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {D:\TRABAJOS SED\GitHub\Trabajo-VHDL\Maquina_Expendedora\Maquina_Expendedora.sim\sim_1\behav\xsim\fsm_tb_behav.wdb}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivaldi/Vivado/2021.1/data/ip'.
+current_fileset: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1135.980 ; gain = 0.000
+open_wave_database: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1135.980 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 27 11:37:47 2021...
