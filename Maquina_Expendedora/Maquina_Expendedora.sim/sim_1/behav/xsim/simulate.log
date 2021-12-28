@@ -1,4 +1,4 @@
 Time resolution is 1 ps
-Failure: [EXITO] Se ha completado la simulacion correctamente
-Time: 27500 ps  Iteration: 0  Process: /IntroducirProducto_tb/estimulos  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/IntroducirProducto_tb.vhd
-$finish called at time : 27500 ps : File "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/IntroducirProducto_tb.vhd" Line 80
+Failure: [EXITO] Simulacion finalizada correctamente
+Time: 4 s  Iteration: 0  Process: /divisorReloj_tb/stim_proc  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/divisorReloj_tb.vhd
+$finish called at time : 4 s : File "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/divisorReloj_tb.vhd" Line 52

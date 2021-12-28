@@ -22,7 +22,7 @@ signal clk,reset : std_logic := '0';
 signal clock_out : std_logic;
 
  -- Clock period definitions
-constant clk_period : time := 100 us;
+constant clk_period : time := 0.01 us;
 
 BEGIN
 
@@ -36,7 +36,6 @@ reset => reset
  -- Clock process definitions
 clk_process :process
 begin
-reset <= '1';
 clk <= '0';
 wait for clk_period/2;
 clk <= '1';
@@ -46,7 +45,11 @@ end process;
  -- Stimulus process
 stim_proc: process
 begin
-
+    reset <= '1';
+    wait for 4000 ms;
+    assert false
+        report "[EXITO] Simulacion finalizada correctamente"
+        severity failure;
 wait;
 end process;
 

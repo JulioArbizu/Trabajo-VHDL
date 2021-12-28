@@ -25,7 +25,7 @@ architecture Behavioral of Clock_Divider is
         begin
         if(reset='0') then
             count := 0;
-        elsif(clk'event and clk='1') then
+        elsif(rising_edge(clk)) then
             count := (count + 1)mod modulo;
         end if;
 
