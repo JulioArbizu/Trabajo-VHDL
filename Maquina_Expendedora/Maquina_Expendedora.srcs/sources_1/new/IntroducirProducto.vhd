@@ -1,21 +1,12 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity IntroducirProducto is
     Port (
     clk : in std_logic;                             -- Señal de reloj
     boton_central : in std_logic;                   -- Boton central, señal que llega desde el bloque antirebotes
     SW : in std_logic_vector(7 downto 0);           -- Switches
-    producto_ok : out std_logic                    -- 1 si el producto es correcto, 0 si no es codigo BCD correcto
+    producto_ok : out std_logic                     -- 1 si el producto es correcto, 0 si no es codigo BCD correcto
     );
 end IntroducirProducto;
 

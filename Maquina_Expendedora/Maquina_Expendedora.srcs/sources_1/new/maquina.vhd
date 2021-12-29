@@ -83,7 +83,7 @@ begin
         reset_n => enable_temp4s,
         contado => temporizador4s
     );
-    fsm_sda : fsm port map (
+    fsm_maquina : fsm port map (
         CLK => clk,
         reset_n => reset_n,
         producto_ok => producto_ok,

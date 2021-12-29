@@ -3,9 +3,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity EDGEDTCTR is
     port ( 
-        CLK : in std_logic;
-        SYNC_IN : in std_logic;
-        EDGE : out std_logic
+        CLK : in std_logic;             -- Señal de reloj
+        SYNC_IN : in std_logic;         -- Entrada sincronizad
+        EDGE : out std_logic            -- Salida del flanco de subida de la entrada sincrona
  );
 end EDGEDTCTR;
 
