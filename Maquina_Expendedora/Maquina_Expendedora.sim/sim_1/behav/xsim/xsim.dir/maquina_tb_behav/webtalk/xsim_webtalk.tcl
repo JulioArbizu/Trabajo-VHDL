@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/xsim.dir/maquina_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Mon Dec 27 19:11:06 2021" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Wed Dec 29 11:36:32 2021" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2021.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3247384" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "558d6980-342e-4031-b5ca-7b5749688403" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "277560adaf884803b43c5807b5fc8cb4" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "22" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "26" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz" -context "user_environment"
@@ -27,6 +27,6 @@ webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\
 webtalk_add_data -client xsim -key runtime -value "13870 ms" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Time -value "0.08_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "7240_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 506909846 -regid "" -xml D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/xsim.dir/maquina_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/xsim.dir/maquina_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/xsim.dir/maquina_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Memory -value "7252_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 4043935502 -regid "" -xml D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/xsim.dir/maquina_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/xsim.dir/maquina_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/xsim.dir/maquina_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

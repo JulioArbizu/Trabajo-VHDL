@@ -69,12 +69,12 @@ begin
         severity failure;
    
    wait for CLK_PERIOD;     
-   temporizador2s <= '1';     
+   temporizador4s <= '1';     
    wait for CLK_PERIOD;
    assert led_standby = '1'
      report "[FALLO] Error volviendo al standby"      
      severity failure;
-   temporizador2s <= '0';
+   temporizador4s <= '0';
    ---------------------------------------------------------------------------------------------------------------------------
   
    ------------------------------------------- SECUENCIA NORMAL -------------------------------------------------------------- 

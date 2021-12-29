@@ -67,7 +67,7 @@ begin
 
     temporizador2segundos : temporizador 
     generic map(
-        MODULO => 4
+        MODULO => 5
     )
     port map (
         clk => clk_2Hz,
@@ -76,7 +76,7 @@ begin
     );
     temporizador4segundos : temporizador 
     generic map(
-        MODULO => 8
+        MODULO => 9
     )
     port map (
         clk => clk_2Hz,

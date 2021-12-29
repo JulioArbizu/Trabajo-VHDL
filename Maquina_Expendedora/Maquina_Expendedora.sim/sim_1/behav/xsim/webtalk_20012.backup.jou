@@ -2,13 +2,11 @@
 # Webtalk v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Mon Dec 27 11:50:14 2021
-# Process ID: 3256
+# Start of session at: Wed Dec 29 11:39:32 2021
+# Process ID: 20012
 # Current directory: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/xsim.dir/fsm_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source D:/TRABAJOS -notrace
-couldn't read file "D:/TRABAJOS": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Mon Dec 27 11:50:15 2021...
