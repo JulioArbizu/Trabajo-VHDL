@@ -5,7 +5,7 @@ use IEEE.numeric_std.all;
 entity contarDinero is
 	port (
       CLK:       in std_logic;
-      devolver:  in std_logic;
+      reset:     in std_logic;
       moneda10c: in std_logic;
       moneda20c: in std_logic;
       moneda50c: in std_logic;
@@ -19,17 +19,25 @@ architecture BEHAVIORAL of contarDinero is
 
 begin
 
-  variable cont : integer :=0;
+
    
-  process(devolver,moneda10c,moneda20c,moneda50c,moneda1e)
+  process(reset,moneda10c,moneda20c,moneda50c,moneda1e)
+    variable cont : integer :=0;
   	begin
-      cont := cont +10 when rising_edge(moneda10c) else
-        cont := cont +20 when rising_edge(moneda20c) else
-          cont := cont +50 when rising_edge(moneda50c) else
-            cont := cont +100 when rising_edge(moneda1e)else
-              cont := 0 when rising_edge(devolver)else 
-                unaffected;
+  	     if reset='1' then
+  	     cont := 0;
+  	     elsif rising_edge(moneda10c) then
+  	     cont := cont +10;
+  	     elsif rising_edge(moneda20c) then
+  	     cont := cont +20;
+  	     elsif rising_edge(moneda50c) then
+  	     cont := cont +50;
+  	     elsif rising_edge(moneda1e) then
+  	     cont := cont +100;
+  	     else
+  	     end if;
+    dinero <= std_logic_vector(to_unsigned(cont,dinero'length));
     end process;
-  dinero <= std_logic_vector'value(cont);
+  
 end BEHAVIORAL;
     

@@ -8,7 +8,6 @@ entity fsm is
         reset_n                 : in std_logic;                   -- Entrada reset activa a nivel bajo
         producto_ok             : in std_logic;                   -- Entrada de que el producto se ha seleccionado correctamente
         dinero_ok               : in std_logic;                   -- Entrada de que se ha superado 1 euro
-        --dinero                  : in unsigned;                    -- Entrada que representa la cantidad de dinero
         temporizador2s          : in std_logic;                   -- Entrada del temporizador
         temporizador4s          : in std_logic;                   -- Entrada del temporizador
         dinero_devuelto         : out std_logic;                  -- Salida que reprenta que se ha devuelto el producto

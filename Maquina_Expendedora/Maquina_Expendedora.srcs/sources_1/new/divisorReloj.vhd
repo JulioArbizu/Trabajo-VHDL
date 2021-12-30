@@ -5,7 +5,7 @@ use IEEE.numeric_std.ALL;
 entity Clock_Divider is
 
     generic(
-    modulo : positive :=50000000
+    modulo : positive := 50000000
     );
     
     port (

@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.numeric_std.all;
 
 entity bcd_7segment is
 Port (
@@ -15,8 +16,9 @@ architecture Behavioral of bcd_7segment is
 begin
 
 process(SW1,SW2)
+    variable dinero_i : unsigned;
 begin
-
+    dinero_i := unsigned(dinero);
 case SW1 is
     when "0000" =>
     Seven_Segment <= "0100000000001";  --0

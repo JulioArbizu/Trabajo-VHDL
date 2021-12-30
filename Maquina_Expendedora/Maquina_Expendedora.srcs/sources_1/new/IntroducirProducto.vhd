@@ -29,7 +29,7 @@ begin
         --4 primeros bits--
         case(SW(7 downto 4)) is
             -- Comprobamos si los primeros cuatro digitos corresponden a un numero en BCD --
-            when "0000" | "0001" | "0010" | "0011" | "0100" | "0101" | "0110" | "0111" | "1000" | "1001" =>
+            when "0000" | "0001" | "0010" | "0011" =>
                 comprobacion1 := true;
             when others =>
                 comprobacion1 := false;
@@ -45,7 +45,9 @@ begin
         end case;
         -- Si ambas comprobaciones son correctas el codigo BCD introducido es válido
         if (comprobacion1 and comprobacion2) then
+            if (SW /= "00000000") then
             comprobacion_ok <= '1';
+            end if;
         else
             comprobacion_ok <= '0';
         end if;        
