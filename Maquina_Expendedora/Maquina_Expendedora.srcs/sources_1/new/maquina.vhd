@@ -17,7 +17,6 @@ entity maquina is
     dinero_ok : in std_logic;
     clk : in std_logic;
     clk_2Hz : in std_logic;
-    --dinero : in unsigned;
     reset_n : in std_logic;
     dinero_devuelto : out std_logic;
     led_standby : out std_logic;
