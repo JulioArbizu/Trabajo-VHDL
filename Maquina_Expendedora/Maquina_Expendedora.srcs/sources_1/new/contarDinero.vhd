@@ -10,6 +10,7 @@ entity contarDinero is
       moneda20c: in std_logic;
       moneda50c: in std_logic;
       moneda1e:  in std_logic; 
+	  dinero_ok  out std_logic;
       dinero:    out std_logic_vector (9 downto 0)
     );
     
@@ -36,6 +37,13 @@ begin
   	     cont := cont +100;
   	     else
   	     end if;
+
+		 if cont > 100 then
+		 dinero_ok <= '1';
+		 else
+		 dinero_ok <= '0';
+		 end if ;
+
     dinero <= std_logic_vector(to_unsigned(cont,dinero'length));
     end process;
   
