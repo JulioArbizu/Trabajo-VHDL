@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.runs/synth_1/fsm.tcl"
+  variable script "C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,22 +70,36 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param synth.incrementalSynthesisCache C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/.Xil/Vivado-18372-DESKTOP-NETJ0H3/incrSyn
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.cache/wt} [current_project]
-set_property parent.project_path {D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.xpr} [current_project]
+set_property webtalk.parent_dir C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.cache/wt [current_project]
+set_property parent.project_path C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo {d:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.cache/ip} [current_project]
+set_property ip_output_repo c:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib {{D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/fsm.vhd}}
+read_vhdl -library xil_defaultlib {
+  C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/Antirebotes.vhd
+  C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/IntroducirProducto.vhd
+  C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/contarDinero.vhd
+  C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/display.vhd
+  C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/edgeDetecteor.vhd
+  C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/fsm.vhd
+  C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/maquina.vhd
+  C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/sincronizador.vhd
+  C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/temporizador.vhd
+  C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sources_1/new/top.vhd
+}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -95,14 +109,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc}}
-set_property used_in_implementation false [get_files {{D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc}}]
+read_xdc C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Nexys-4-DDR-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top fsm -part xc7a100tcsg324-1
+synth_design -top top -part xc7a100tcsg324-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -112,10 +126,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef fsm.dcp
+write_checkpoint -force -noxdef top.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file fsm_utilization_synth.rpt -pb fsm_utilization_synth.pb"
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb"
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

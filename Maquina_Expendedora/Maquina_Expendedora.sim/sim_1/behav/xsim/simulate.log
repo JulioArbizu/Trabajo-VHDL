@@ -1,4 +1,4 @@
 Time resolution is 1 ps
-Failure: [EXITO] Simulacion finalizada correctamente
-Time: 4 s  Iteration: 0  Process: /divisorReloj_tb/stim_proc  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/divisorReloj_tb.vhd
-$finish called at time : 4 s : File "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/divisorReloj_tb.vhd" Line 52
+Failure: La simulación se finalizó correctamente
+Time: 80 ns  Iteration: 0  Process: /contarDinero_tb/stim_proc  File: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/contarDinero_tb.vhd
+$finish called at time : 80 ns : File "C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora/Maquina_Expendedora.srcs/sim_1/new/contarDinero_tb.vhd" Line 64

@@ -27,9 +27,8 @@ entity top is
         moneda_50c          : in std_logic;                     -- Moneda 50 centimos
         moneda_1e           : in std_logic;                     -- Moneda 1 euro
         producto_SW         : in std_logic_vector(7 downto 0);  -- Switches para seleccion numero de producto en BCD
-        seven_segment       : out std_logic_vector(6 downto 0); -- Salida a los displays
-        an                  : out std_logic_vector(6 downto 0); -- Anodos de los displays
-        led_cant_dinero     : out std_logic_vector(9 downto 0); -- Cantidad de dinero en led, 10 leds encendidos es 1 euro, 0 leds encendido 0 euros
+        seven_segment       : out std_logic_vector(12 downto 0); -- Salida a los displays
+       -- an                  : out std_logic_vector(6 downto 0); -- Anodos de los displays
         led_pro_entregado   : out std_logic;                    -- true producto entregado, 0 producto no entregado
         led_pro_ok          : out std_logic;                    -- true producto elegido correctamente
         led_trabajando      : out std_logic;                    -- true si la maquina está procesando, o bien esperando al pago, devolviendo o entregando producto
@@ -98,29 +97,33 @@ COMPONENT temporizador is
   );
 end COMPONENT;
 
-COMPONENT contarDinero is
+component  contarDinero is
 	port (
-      CLK:       in std_logic;
-      reset:     in std_logic;
-      moneda10c: in std_logic;
-      moneda20c: in std_logic;
-      moneda50c: in std_logic;
-      moneda1e:  in std_logic; 
-      dinero:    out std_logic_vector (9 downto 0)
+      CLK:        in std_logic;
+      reset:      in std_logic;
+      moneda10c:  in std_logic;
+      moneda20c:  in std_logic;
+      moneda50c:  in std_logic;
+      moneda1e:   in std_logic; 
+	  dinero_ok:  out std_logic;
+      dinero_decenas:      out std_logic_vector (9 downto 0);
+      dinero_centenas:     out std_logic_vector (9 downto 0)
     );
-end COMPONENT;
+end component ;
 
-COMPONENT display is
-    Port (
-    SW : in STD_LOGIC_VECTOR(7 downto 0); 
-    dinero : in STD_LOGIC_VECTOR (9 downto 0);
-    Seven_Segment : out STD_LOGIC_VECTOR (12 downto 0) --D8 D7 D3 DP D2 D1 gfedcba
-);  
-end COMPONENT; 
+component display   is 
+ Port ( 
+     SW                    : in STD_LOGIC_VECTOR (7 downto 0); 
+     dinero_decenas        : in STD_LOGIC_VECTOR (9 downto 0); 
+     dinero_centenas       : in STD_LOGIC_VECTOR (9 downto 0); 
+     Seven_Segment         : out STD_LOGIC_VECTOR (12 downto 0)--D8 D7 D3 DP D2 D1 gfedcba 
+ );  
+ end component;
+ 
 -------------- SEÑALES -------------------
     signal reset_i, boton_central_i, moneda_10c_i, moneda_20c_i, moneda_50c_i, moneda_1e_i : std_logic;
     signal productoOK_i, dineroOK_i : std_logic;
-    signal dinero_i : std_logic_vector(9 downto 0);
+    signal dinero_decenas_i,dinero_centenas_i : std_logic_vector(9 downto 0);
     signal dinero_devuelto_i : std_logic;
     signal clk_2Hz_i : std_logic;
 
@@ -156,9 +159,17 @@ monedero : contarDinero PORT MAP(
       moneda20c => moneda_20c_i,
       moneda50c => moneda_50c_i,
       moneda1e => moneda_1e_i, 
-      dinero => dinero_i 
+      dinero_ok => dineroOK_i,
+      dinero_decenas => dinero_decenas_i,
+      dinero_centenas => dinero_centenas_i 
 );
 
+display_c : display PORT MAP(
+    SW => producto_SW,                  
+    dinero_decenas => dinero_decenas_i,
+    dinero_centenas => dinero_centenas_i,      
+    Seven_Segment => seven_segment
+);
 maquina_c : maquina PORT MAP(
     producto_ok => productoOK_i,
     dinero_ok => dineroOK_i,
