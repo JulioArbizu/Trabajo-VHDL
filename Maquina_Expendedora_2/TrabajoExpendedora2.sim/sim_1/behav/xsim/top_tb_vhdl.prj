@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TrabajoExpendedora2.srcs/sources_1/new/Antirebotes.vhd" \
+"../../../../TrabajoExpendedora2.srcs/sources_1/new/IntroducirProducto.vhd" \
+"../../../../TrabajoExpendedora2.srcs/sources_1/new/contarDinero.vhd" \
+"../../../../TrabajoExpendedora2.srcs/sources_1/new/display.vhd" \
+"../../../../TrabajoExpendedora2.srcs/sources_1/new/edgeDetecteor.vhd" \
+"../../../../TrabajoExpendedora2.srcs/sources_1/new/fsm.vhd" \
+"../../../../TrabajoExpendedora2.srcs/sources_1/new/maquina.vhd" \
+"../../../../TrabajoExpendedora2.srcs/sources_1/new/sincronizador.vhd" \
+"../../../../TrabajoExpendedora2.srcs/sources_1/new/temporizador.vhd" \
+"../../../../TrabajoExpendedora2.srcs/sources_1/new/top.vhd" \
+"../../../../TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd" \
+
+# Do not sort compile order
+nosort

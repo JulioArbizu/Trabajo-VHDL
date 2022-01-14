@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Warning: [ERROR] Reset no funciona correctamente
+Time: 10 ns  Iteration: 0  Process: /top_tb/estimulos  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
+Warning: [ERROR]: Error al devolver el dinero
+Time: 2000000020 ns  Iteration: 0  Process: /top_tb/estimulos  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
