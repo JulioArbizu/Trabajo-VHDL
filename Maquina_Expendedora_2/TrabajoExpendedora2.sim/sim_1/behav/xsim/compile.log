@@ -1,22 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/Antirebotes.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'antirebotes'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/IntroducirProducto.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'IntroducirProducto'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/contarDinero.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'contarDinero'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/display.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'display'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/edgeDetecteor.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'EDGEDTCTR'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/fsm.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'fsm'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/maquina.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/maquina.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'maquina'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/sincronizador.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'SYNCHRNZR'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/temporizador.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'temporizador'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/top.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'top'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'top_tb'

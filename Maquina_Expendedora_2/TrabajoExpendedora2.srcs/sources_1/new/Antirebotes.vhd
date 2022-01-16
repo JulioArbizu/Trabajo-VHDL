@@ -5,14 +5,14 @@ entity antirebotes is
     port(
     ------------------------------ ENTRADAS ----------------------------------------
         CLK                     : in std_logic;                     -- Señal de reloj
-        reset_n_in             : in std_logic;                     -- Entrada reset activa a nivel bajo
+        reset_in             : in std_logic;                     -- Entrada reset activa a nivel bajo
         boton_central_in       : in std_logic;                     -- Utilaza para seleccion del producto y modo de pago con tarjeta
         moneda_10c_in          : in std_logic;                     -- Moneda 10 centimos
         moneda_20c_in          : in std_logic;                     -- Moneda 20 centimos
         moneda_50c_in          : in std_logic;                     -- Moneda 50 centimos
         moneda_1e_in           : in std_logic;                     -- Moneda 1 euro
         --------------------------- SALIDAS -----------------------------------------
-        reset_n_out             : out std_logic;                     
+        reset_out             : out std_logic;                     
         boton_central_out       : out std_logic;                     
         moneda_10c_out          : out std_logic;                     
         moneda_20c_out          : out std_logic;                     
@@ -38,10 +38,10 @@ architecture Structural of antirebotes is
         SYNC_OUT : out std_logic
     );
     end COMPONENT;
-    signal reset_n, boton_central, moneda_10c, moneda_20c, moneda_50c, moneda_1e : std_logic;
+    signal reset, boton_central, moneda_10c, moneda_20c, moneda_50c, moneda_1e : std_logic;
 begin
-    snc_reset : SYNCHRNZR PORT MAP (clk=>clk, ASYNC_IN=>reset_n_in, SYNC_OUT=>reset_n);
-    edge_reset : EDGEDTCTR PORT MAP(clk=>clk, SYNC_IN=>reset_n, EDGE=>reset_n_out);
+    snc_reset : SYNCHRNZR PORT MAP (clk=>clk, ASYNC_IN=>reset_in, SYNC_OUT=>reset);
+    edge_reset : EDGEDTCTR PORT MAP(clk=>clk, SYNC_IN=>reset, EDGE=>reset_out);
     
     snc_btn_cen : SYNCHRNZR PORT MAP (clk=>clk, ASYNC_IN=>boton_central_in, SYNC_OUT=>boton_central);
     edge_btc_cen : EDGEDTCTR PORT MAP(clk=>clk, SYNC_IN=>boton_central, EDGE=>boton_central_out);

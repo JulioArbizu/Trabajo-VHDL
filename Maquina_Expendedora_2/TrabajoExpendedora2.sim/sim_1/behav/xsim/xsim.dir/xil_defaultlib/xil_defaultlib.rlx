@@ -1,15 +1,19 @@
 0.7
 2020.2
-Jun 10 2021
-20:04:57
-D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd,1642195787,vhdl,,,,top_tb,,,,,,,,
-D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/Antirebotes.vhd,1639849586,vhdl,,,,antirebotes,,,,,,,,
-D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/IntroducirProducto.vhd,1642150396,vhdl,,,,introducirproducto,,,,,,,,
-D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/contarDinero.vhd,1642151112,vhdl,,,,contardinero,,,,,,,,
-D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/display.vhd,1641318488,vhdl,,,,display,,,,,,,,
-D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/edgeDetecteor.vhd,1640856606,vhdl,,,,edgedtctr,,,,,,,,
-D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/fsm.vhd,1642150522,vhdl,,,,fsm,,,,,,,,
-D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/maquina.vhd,1641286574,vhdl,,,,maquina,,,,,,,,
-D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/sincronizador.vhd,1640856606,vhdl,,,,synchrnzr,,,,,,,,
-D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/temporizador.vhd,1642150598,vhdl,,,,temporizador,,,,,,,,
-D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/top.vhd,1642195736,vhdl,,,,top,,,,,,,,
+Oct 19 2021
+03:16:22
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/contarDinero_tb.vhd,1642283072,vhdl,,,,contardinero_tb,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/fsm_tb.vhd,1642200442,vhdl,,,,fsm_tb,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/maquina_tb.vhd,1642200733,vhdl,,,,maquina_tb,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd,1642284666,vhdl,,,,top_tb,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/Antirebotes.vhd,1642284778,vhdl,,,,antirebotes,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/IntroducirProducto.vhd,1642200027,vhdl,,,,introducirproducto,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/contarDinero.vhd,1642200027,vhdl,,,,contardinero,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/decoder7segments.vhd,1642200027,vhdl,,,,decoder7segments,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/edgeDetecteor.vhd,1642200027,vhdl,,,,edgedtctr,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/fsm.vhd,1642284163,vhdl,,,,fsm,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/maquina.vhd,1642284971,vhdl,,,,maquina,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/segmentMux.vhd,1642284864,vhdl,,,,segmentdriver,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/sincronizador.vhd,1642200027,vhdl,,,,synchrnzr,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/temporizador.vhd,1642284336,vhdl,,,,temporizador,,,,,,,,
+C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/top.vhd,1642284785,vhdl,,,,top,,,,,,,,

@@ -16,7 +16,7 @@ entity temporizador is
   );
   Port ( 
   clk       : in std_logic;  --Reloj
-  reset_n   : in std_logic;  --Entrada reset asíncrona
+  reset   : in std_logic;  --Entrada reset asíncrona
   contado   : out std_logic  --Salida del temporizador, 1 cuando se acaba la cuenta
   );
 end temporizador;
@@ -24,11 +24,11 @@ end temporizador;
 architecture Behavioral of temporizador is
 
 begin
-process(reset_n, clk)
+process(reset, clk)
     subtype count_t is natural range 0 to MODULO - 1;
     variable count : count_t;
 begin
-    if reset_n = '1' then
+    if reset = '1' then
         count := 0;
     elsif rising_edge (clk) then
         count := (count+1)mod MODULO;

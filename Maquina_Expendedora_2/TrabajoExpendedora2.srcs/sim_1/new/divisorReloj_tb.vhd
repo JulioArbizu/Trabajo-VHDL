@@ -14,7 +14,7 @@ COMPONENT temporizador is
   );
   Port ( 
   clk       : in std_logic;  --Reloj
-  reset_n   : in std_logic;  --Entrada reset asíncrona
+  reset   : in std_logic;  --Entrada reset asíncrona
   contado   : out std_logic  --Salida del temporizador, 1 cuando se acaba la cuenta
   );
 end COMPONENT;
@@ -38,7 +38,7 @@ generic map(
 PORT MAP (
 clk => clk,
 contado => clock_out,
-reset_n => reset
+reset => reset
 );
 
  -- Clock process definitions

@@ -44,7 +44,7 @@ architecture Behavioral of segmentDriver is
       );
       Port ( 
       clk       : in std_logic;  --Reloj
-      reset_n   : in std_logic;  --Entrada reset asíncrona
+      reset   : in std_logic;  --Entrada reset asíncrona
       contado   : out std_logic  --Salida del temporizador, 1 cuando se acaba la cuenta
       );
     end COMPONENT;
@@ -64,7 +64,7 @@ begin
     )
     port map(
         clk => clk,
-        reset_n => '1',
+        reset => '0',
         contado => clk_10kHz
     );
 
@@ -110,7 +110,7 @@ begin
                 punto <= '1';
                seleccion_display := seleccion_display + '1';
                
-            when "011" => temperary_data <= dinero_centenas;
+            when "100" => temperary_data <= dinero_centenas;
                 select_SW1 <= '1';
                 select_SW2 <= '1';
                 select_decenas <= '1';

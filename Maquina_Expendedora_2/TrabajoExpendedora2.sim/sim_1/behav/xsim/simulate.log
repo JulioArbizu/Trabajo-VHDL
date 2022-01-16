@@ -1,5 +1,21 @@
 Time resolution is 1 ps
 Warning: [ERROR] Reset no funciona correctamente
-Time: 10 ns  Iteration: 0  Process: /top_tb/estimulos  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
+Time: 10 ns  Iteration: 0  Process: /top_tb/estimulos  File: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
 Warning: [ERROR]: Error al devolver el dinero
-Time: 2000000020 ns  Iteration: 0  Process: /top_tb/estimulos  File: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
+Time: 2000000020 ns  Iteration: 0  Process: /top_tb/estimulos  File: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
+Warning: [ERROR]: Error al volver al standby desde devolver dinero
+Time: 6000000030 ns  Iteration: 0  Process: /top_tb/estimulos  File: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
+Warning: [ERROR] No funciona correctamente la seleccion del producto, codigo incorrecto ha sido detectado como correcto
+Time: 6200000050200 ps  Iteration: 0  Process: /top_tb/estimulos  File: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
+Warning: [ERROR] No trabaja la maquina al introducir el dinero
+Time: 6300000050200 ps  Iteration: 0  Process: /top_tb/estimulos  File: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
+Warning: [ERROR] No se ha encendido el led de producto entregado
+Time: 10300000050200 ps  Iteration: 0  Process: /top_tb/estimulos  File: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
+Warning: [ERROR] No se ha encendido el led de dinero devuelto
+Time: 10300000050200 ps  Iteration: 0  Process: /top_tb/estimulos  File: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
+Warning: [ERROR] No se ha vuelto al standby
+Time: 12300000050200 ps  Iteration: 0  Process: /top_tb/estimulos  File: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
+Failure: [EXITO]: Simulacion Completada
+Time: 12300000050200 ps  Iteration: 0  Process: /top_tb/estimulos  File: C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd
+$finish called at time : 12300000050200 ps : File "C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sim_1/new/top_tb.vhd" Line 140
+INFO: xsimkernel Simulation Memory Usage: 16056 KB (Peak: 16056 KB), Simulation CPU Usage: 2860609 ms
