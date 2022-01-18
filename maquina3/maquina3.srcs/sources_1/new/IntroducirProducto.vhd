@@ -12,10 +12,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity IntroducirProducto is
     Port (
-    clk : in std_logic;                             -- Señal de reloj
-    boton_central : in std_logic;                   -- Boton central, señal que llega desde el bloque antirebotes
-    SW : in std_logic_vector(7 downto 0);           -- Switches
-    producto_ok : out std_logic                    -- 1 si el producto es correcto, 0 si no es codigo BCD correcto
+    clk             : in std_logic;                     -- Señal de reloj
+    boton_central   : in std_logic;                     -- Boton central, señal que llega desde el bloque antirebotes
+    SW              : in std_logic_vector(7 downto 0);  -- Switches
+    producto_ok     : out std_logic                     -- 1 si el producto es correcto, 0 si no es codigo BCD correcto
     );
 end IntroducirProducto;
 

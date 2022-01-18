@@ -41,12 +41,12 @@ architecture Behavioral of temporizador_tb is
       );
       Port ( 
       clk       : in std_logic;  --Reloj
-      reset_n   : in std_logic;  --Entrada reset asíncrona
+      reset   : in std_logic;  --Entrada reset asíncrona
       contado   : out std_logic  --Salida del temporizador, 1 cuando se acaba la cuenta
       );
     end COMPONENT;
     signal clk : std_logic := '0';
-    signal reset_n,contado : std_logic;
+    signal reset,contado : std_logic;
     constant CLK_PERIOD : time := 10 ns;
 begin
 
@@ -56,7 +56,7 @@ generic map(
 )
 port map (
     clk => clk,
-    reset_n => reset_n,
+    reset => reset,
     contado => contado
 );
 
@@ -65,13 +65,13 @@ genclk : clk <= not clk after 0.5 * CLK_PERIOD;
 stimulus : process
 begin
 
-    reset_n <= '0';
+    reset <= '1';
     wait for 0.75 * CLK_PERIOD;
     assert contado = '0'
         report "[FALLO] Reset no funciona correctamente"
         severity failure;
         
-    reset_n <= '1';
+    reset <= '0';
     wait for 9 * CLK_PERIOD;
     assert contado = '1'
         report "[FALLO] El temporizador alcanza la cuenta pero la salida no se activa"

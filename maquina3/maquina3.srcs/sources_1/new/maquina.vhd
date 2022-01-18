@@ -13,17 +13,17 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity maquina is
     Port ( 
-    producto_ok : in std_logic;
-    dinero_ok : in std_logic;
-    clk : in std_logic;
-    clk_2Hz : in std_logic;
-    reset : in std_logic;
-    dinero_devuelto : out std_logic;
-    led_standby : out std_logic;
-    led_prod_entregado : out std_logic;
-    led_trabajando : out std_logic;
-    led_prod_ok : out std_logic;
-    led_dinero_dev : out std_logic  
+    producto_ok         : in std_logic;
+    dinero_ok           : in std_logic;
+    clk                 : in std_logic;
+    clk_2Hz             : in std_logic;
+    reset               : in std_logic;
+    dinero_devuelto     : out std_logic;
+    led_standby         : out std_logic;
+    led_prod_entregado  : out std_logic;
+    led_trabajando      : out std_logic;
+    led_prod_ok         : out std_logic;
+    led_dinero_dev      : out std_logic  
     );
 end maquina;
 

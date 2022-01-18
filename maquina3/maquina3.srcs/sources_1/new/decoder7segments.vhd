@@ -26,8 +26,8 @@ USE ieee.std_logic_unsigned.ALL;
 
 ENTITY decoder7segments IS
     PORT (
-        code : IN std_logic_vector(3 DOWNTO 0);
-        led : OUT std_logic_vector(6 DOWNTO 0)
+        code    : IN std_logic_vector(3 DOWNTO 0);
+        led     : OUT std_logic_vector(6 DOWNTO 0)
     );
 END ENTITY decoder7segments;
 

@@ -1,2 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/julio/OneDrive/Documents/GitHub/Trabajo-VHDL/Maquina_Expendedora_2/TrabajoExpendedora2.srcs/sources_1/new/maquina.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'maquina'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/contarDinero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'contarDinero'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sim_1/new/contarDinero_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'contarDinero_tb'

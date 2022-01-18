@@ -15,9 +15,9 @@ entity temporizador is
   MODULO : positive
   );
   Port ( 
-  clk       : in std_logic;  --Reloj
-  reset   : in std_logic;  --Entrada reset asíncrona
-  contado   : out std_logic  --Salida del temporizador, 1 cuando se acaba la cuenta
+  clk           : in std_logic;  --Reloj
+  reset         : in std_logic;  --Entrada reset asíncrona
+  contado       : out std_logic  --Salida del temporizador, 1 cuando se acaba la cuenta
   );
 end temporizador;
 

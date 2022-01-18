@@ -4,15 +4,15 @@ use IEEE.numeric_std.all;
 
 entity contarDinero is
 	port (
-      CLK:        in std_logic;
-      reset:      in std_logic;
-      moneda10c:  in std_logic;
-      moneda20c:  in std_logic;
-      moneda50c:  in std_logic;
-      moneda1e:   in std_logic; 
-	  dinero_ok:  out std_logic;
-      dinero_decenas:      out std_logic_vector (3 downto 0);
-      dinero_centenas:     out std_logic_vector (3 downto 0)
+      CLK               : in std_logic;
+      reset             : in std_logic;
+      moneda10c         : in std_logic;
+      moneda20c         : in std_logic;
+      moneda50c         : in std_logic;
+      moneda1e          : in std_logic; 
+	  dinero_ok         : out std_logic;
+      dinero_decenas    : out std_logic_vector (3 downto 0);
+      dinero_centenas   : out std_logic_vector (3 downto 0)
     );
     
 end contarDinero;
@@ -21,8 +21,6 @@ architecture BEHAVIORAL of contarDinero is
 
 begin
 
-
-   
    process(reset,CLK)
     variable cont : integer :=0;
     variable centenas  : integer :=0;

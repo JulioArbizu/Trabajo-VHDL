@@ -107,8 +107,6 @@ begin
         report "[EXITO] Simulacion completada correctamente"
         severity failure;
 
-
-
 end process;
 
 end Behavioral;

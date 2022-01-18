@@ -1,0 +1,128 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:33 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 14544
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Jan 18 01:03:19 CET 2022
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/Vivaldi/Vivado/2021.1/tps/win64/jre11.0.2
+Java executable: 	D:/Vivaldi/Vivado/2021.1/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ADROFE
+User home directory: C:/Users/ADROFE
+User working directory: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: D:/Vivaldi/Vivado
+HDI_APPROOT: D:/Vivaldi/Vivado/2021.1
+RDI_DATADIR: D:/Vivaldi/Vivado/2021.1/data
+RDI_BINDIR: D:/Vivaldi/Vivado/2021.1/bin
+
+Vivado preferences file: C:/Users/ADROFE/AppData/Roaming/Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: C:/Users/ADROFE/AppData/Roaming/Xilinx/Vivado/2021.1/
+Vivado layouts directory: C:/Users/ADROFE/AppData/Roaming/Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	D:/Vivaldi/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/vivado.log
+Vivado journal file: 	D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/vivado.jou
+Engine tmp dir: 	D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/.Xil/Vivado-14544-DESKTOP-RQRD0QL
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivaldi/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: D:/Vivaldi/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: D:/Vivaldi/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: D:/Vivaldi/Vivado/2021.1
+XILINX_VIVADO: D:/Vivaldi/Vivado/2021.1
+XILINX_VIVADO_HLS: D:/Vivaldi/Vivado/2021.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,151 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: D:\TRABAJOS SED\GitHub\Trabajo-VHDL\maquina3\maquina3.xpr. Version: Vivado v2021.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project {D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,151 MB. GUI used memory: 61 MB. Current time: 1/18/22, 1:03:20 AM CET
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 65 MB (+66152kb) [00:00:20]
+// [Engine Memory]: 1,151 MB (+1055861kb) [00:00:20]
+// [GUI Memory]: 89 MB (+21513kb) [00:00:21]
+// [GUI Memory]: 115 MB (+22030kb) [00:00:22]
+// WARNING: HEventQueue.dispatchEvent() is taking  5376 ms.
+// Tcl Message: open_project {D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivaldi/Vivado/2021.1/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  1132 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 1137.008 ; gain = 0.000 
+// Project name: maquina3; location: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bz
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 410ms to process. Increasing delay to 3000 ms.
+// WARNING: updateGUI() is taking  1108 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1152 ms.
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2131 ms. Increasing delay to 3000 ms.
+// [GUI Memory]: 145 MB (+25657kb) [00:00:37]
+closeMainWindow("maquina3 - [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.xpr] - Vivado 2021.1"); // cs
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton("OptionPane.button", "Wait"); // JButton

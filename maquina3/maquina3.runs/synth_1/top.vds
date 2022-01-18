@@ -2,12 +2,12 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Mon Jan 17 11:22:19 2022
-# Process ID: 5132
-# Current directory: C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.runs/synth_1
+# Start of session at: Tue Jan 18 00:56:01 2022
+# Process ID: 16416
+# Current directory: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.runs/synth_1/top.vds
-# Journal file: C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.runs/synth_1\vivado.jou
+# Log file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.runs/synth_1/top.vds
+# Journal file: D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
 Command: synth_design -top top -part xc7a100tcsg324-1
@@ -17,116 +17,116 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5468
+INFO: [Synth 8-7075] Helper process launched with PID 14760
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1134.695 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:46]
-INFO: [Synth 8-3491] module 'antirebotes' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:4' bound to instance 'antirrebotes_c' of component 'antirebotes' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:145]
-INFO: [Synth 8-638] synthesizing module 'antirebotes' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:25]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:4' bound to instance 'snc_reset' of component 'SYNCHRNZR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (1#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:12]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:4' bound to instance 'edge_reset' of component 'EDGEDTCTR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:44]
-INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (2#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:12]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:4' bound to instance 'snc_btn_cen' of component 'SYNCHRNZR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:46]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:4' bound to instance 'edge_btc_cen' of component 'EDGEDTCTR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:47]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:4' bound to instance 'snc_m10c' of component 'SYNCHRNZR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:49]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:4' bound to instance 'edge_m10c' of component 'EDGEDTCTR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:50]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:4' bound to instance 'snc_m20c' of component 'SYNCHRNZR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:52]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:4' bound to instance 'edge_m20c' of component 'EDGEDTCTR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:53]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:4' bound to instance 'snc_m50c' of component 'SYNCHRNZR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:55]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:4' bound to instance 'edge_m50c' of component 'EDGEDTCTR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:56]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:4' bound to instance 'snc_m1e' of component 'SYNCHRNZR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:58]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:4' bound to instance 'edge_m1e' of component 'EDGEDTCTR' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'antirebotes' (3#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:25]
-INFO: [Synth 8-3491] module 'IntroducirProducto' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/IntroducirProducto.vhd:13' bound to instance 'introducirProducto_c' of component 'IntroducirProducto' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'IntroducirProducto' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/IntroducirProducto.vhd:22]
-WARNING: [Synth 8-614] signal 'comprobacion_ok' is read in the process but is not in the sensitivity list [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/IntroducirProducto.vhd:56]
-INFO: [Synth 8-256] done synthesizing module 'IntroducirProducto' (4#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/IntroducirProducto.vhd:22]
-INFO: [Synth 8-3491] module 'contarDinero' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/contarDinero.vhd:5' bound to instance 'monedero' of component 'contarDinero' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:169]
-INFO: [Synth 8-638] synthesizing module 'contarDinero' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/contarDinero.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'contarDinero' (5#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/contarDinero.vhd:20]
-INFO: [Synth 8-3491] module 'segmentDriver' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/segmentMux.vhd:16' bound to instance 'segmentDriver_c' of component 'segmentDriver' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:181]
-INFO: [Synth 8-638] synthesizing module 'segmentDriver' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/segmentMux.vhd:33]
-INFO: [Synth 8-3491] module 'decoder7segments' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/decoder7segments.vhd:27' bound to instance 'decoder7segments_uut' of component 'decoder7segments' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/segmentMux.vhd:58]
-INFO: [Synth 8-638] synthesizing module 'decoder7segments' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/decoder7segments.vhd:34]
-INFO: [Synth 8-256] done synthesizing module 'decoder7segments' (6#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/decoder7segments.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'top' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:46]
+INFO: [Synth 8-3491] module 'antirebotes' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:4' bound to instance 'antirrebotes_c' of component 'antirebotes' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'antirebotes' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:25]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:4' bound to instance 'snc_reset' of component 'SYNCHRNZR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (1#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:12]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:4' bound to instance 'edge_reset' of component 'EDGEDTCTR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (2#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:12]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:4' bound to instance 'snc_btn_cen' of component 'SYNCHRNZR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:46]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:4' bound to instance 'edge_btc_cen' of component 'EDGEDTCTR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:47]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:4' bound to instance 'snc_m10c' of component 'SYNCHRNZR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:49]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:4' bound to instance 'edge_m10c' of component 'EDGEDTCTR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:50]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:4' bound to instance 'snc_m20c' of component 'SYNCHRNZR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:52]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:4' bound to instance 'edge_m20c' of component 'EDGEDTCTR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:53]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:4' bound to instance 'snc_m50c' of component 'SYNCHRNZR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:55]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:4' bound to instance 'edge_m50c' of component 'EDGEDTCTR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:56]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/sincronizador.vhd:4' bound to instance 'snc_m1e' of component 'SYNCHRNZR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:58]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/edgeDetecteor.vhd:4' bound to instance 'edge_m1e' of component 'EDGEDTCTR' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'antirebotes' (3#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/Antirebotes.vhd:25]
+INFO: [Synth 8-3491] module 'IntroducirProducto' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/IntroducirProducto.vhd:13' bound to instance 'introducirProducto_c' of component 'IntroducirProducto' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'IntroducirProducto' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/IntroducirProducto.vhd:22]
+WARNING: [Synth 8-614] signal 'comprobacion_ok' is read in the process but is not in the sensitivity list [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/IntroducirProducto.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'IntroducirProducto' (4#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/IntroducirProducto.vhd:22]
+INFO: [Synth 8-3491] module 'contarDinero' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/contarDinero.vhd:5' bound to instance 'monedero' of component 'contarDinero' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'contarDinero' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/contarDinero.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'contarDinero' (5#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/contarDinero.vhd:20]
+INFO: [Synth 8-3491] module 'segmentDriver' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/segmentMux.vhd:16' bound to instance 'segmentDriver_c' of component 'segmentDriver' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'segmentDriver' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/segmentMux.vhd:33]
+INFO: [Synth 8-3491] module 'decoder7segments' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/decoder7segments.vhd:27' bound to instance 'decoder7segments_uut' of component 'decoder7segments' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/segmentMux.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'decoder7segments' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/decoder7segments.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'decoder7segments' (6#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/decoder7segments.vhd:34]
 	Parameter MODULO bound to: 10000 - type: integer 
-INFO: [Synth 8-3491] module 'temporizador' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:13' bound to instance 'clock10kHz' of component 'temporizador' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/segmentMux.vhd:63]
-INFO: [Synth 8-638] synthesizing module 'temporizador' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
+INFO: [Synth 8-3491] module 'temporizador' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:13' bound to instance 'clock10kHz' of component 'temporizador' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/segmentMux.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'temporizador' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
 	Parameter MODULO bound to: 10000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'temporizador' (7#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'segmentDriver' (8#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/segmentMux.vhd:33]
-INFO: [Synth 8-3491] module 'maquina' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/maquina.vhd:14' bound to instance 'maquina_c' of component 'maquina' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:196]
-INFO: [Synth 8-638] synthesizing module 'maquina' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/maquina.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'temporizador' (7#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'segmentDriver' (8#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/segmentMux.vhd:33]
+INFO: [Synth 8-3491] module 'maquina' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/maquina.vhd:14' bound to instance 'maquina_c' of component 'maquina' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'maquina' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/maquina.vhd:30]
 	Parameter MODULO bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'temporizador' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:13' bound to instance 'temporizador2segundos' of component 'temporizador' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/maquina.vhd:66]
-INFO: [Synth 8-638] synthesizing module 'temporizador__parameterized1' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
+INFO: [Synth 8-3491] module 'temporizador' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:13' bound to instance 'temporizador2segundos' of component 'temporizador' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/maquina.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'temporizador__parameterized1' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
 	Parameter MODULO bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'temporizador__parameterized1' (8#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'temporizador__parameterized1' (8#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
 	Parameter MODULO bound to: 9 - type: integer 
-INFO: [Synth 8-3491] module 'temporizador' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:13' bound to instance 'temporizador4segundos' of component 'temporizador' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/maquina.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'temporizador__parameterized3' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
+INFO: [Synth 8-3491] module 'temporizador' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:13' bound to instance 'temporizador4segundos' of component 'temporizador' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/maquina.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'temporizador__parameterized3' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
 	Parameter MODULO bound to: 9 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'temporizador__parameterized3' (8#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
-INFO: [Synth 8-3491] module 'fsm' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/fsm.vhd:5' bound to instance 'fsm_maquina' of component 'fsm' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/maquina.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'fsm' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/fsm.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'fsm' (9#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/fsm.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'maquina' (10#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/maquina.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'temporizador__parameterized3' (8#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
+INFO: [Synth 8-3491] module 'fsm' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/fsm.vhd:5' bound to instance 'fsm_maquina' of component 'fsm' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/maquina.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'fsm' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/fsm.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'fsm' (9#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/fsm.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'maquina' (10#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/maquina.vhd:30]
 	Parameter MODULO bound to: 50000000 - type: integer 
-INFO: [Synth 8-3491] module 'temporizador' declared at 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:13' bound to instance 'clk2HZ' of component 'temporizador' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:210]
-INFO: [Synth 8-638] synthesizing module 'temporizador__parameterized5' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
+INFO: [Synth 8-3491] module 'temporizador' declared at 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:13' bound to instance 'clk2HZ' of component 'temporizador' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'temporizador__parameterized5' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
 	Parameter MODULO bound to: 50000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'temporizador__parameterized5' (10#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'top' (11#1) [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'temporizador__parameterized5' (10#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/temporizador.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'top' (11#1) [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/top.vhd:46]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1134.695 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1134.695 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1134.695 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1134.695 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/Nexys-4-DDR-Master.xdc]
-Finished Parsing XDC File [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/Nexys-4-DDR-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1166.988 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1166.988 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1166.988 ; gain = 32.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1166.988 ; gain = 32.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1166.988 ; gain = 32.293
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'fsm'
-WARNING: [Synth 8-327] inferring latch for variable 'comprobacion_ok_reg' [C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/IntroducirProducto.vhd:49]
+WARNING: [Synth 8-327] inferring latch for variable 'comprobacion_ok_reg' [D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.srcs/sources_1/new/IntroducirProducto.vhd:49]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -139,7 +139,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'comprobacion_ok_reg' [C:/Us
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1166.988 ; gain = 32.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -184,25 +184,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1166.988 ; gain = 32.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1166.988 ; gain = 32.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1166.988 ; gain = 32.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1217.652 ; gain = 82.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -220,37 +220,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1232.352 ; gain = 97.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1232.352 ; gain = 97.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1232.352 ; gain = 97.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1232.352 ; gain = 97.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1232.352 ; gain = 97.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1232.352 ; gain = 97.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -304,18 +304,18 @@ Report Cell Usage:
 |17    |OBUF   |    21|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1232.352 ; gain = 97.656
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1206.254 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1232.352 ; gain = 65.363
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1232.352 ; gain = 97.656
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1232.352 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 229 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1206.254 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1235.012 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   LDC => LDCE: 1 instance 
@@ -324,7 +324,7 @@ Synth Design complete, checksum: 692d88b9
 INFO: [Common 17-83] Releasing license: Synthesis
 68 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1206.254 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/sed/Desktop/Trabajo-VHDL/maquina3/maquina3.runs/synth_1/top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 1235.012 ; gain = 100.316
+INFO: [Common 17-1381] The checkpoint 'D:/TRABAJOS SED/GitHub/Trabajo-VHDL/maquina3/maquina3.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jan 17 11:23:10 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 18 00:57:03 2022...

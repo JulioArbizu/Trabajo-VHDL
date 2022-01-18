@@ -53,7 +53,7 @@ end process;
  -- Stimulus process
 stim_proc: process
 begin
-    reset <= '1';
+    reset <= '0';
     wait for 4 * CLK_PERIOD;
     reset <= '0';
     wait for 4000 ms;

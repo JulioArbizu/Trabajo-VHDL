@@ -17,8 +17,8 @@ COMPONENT fsm is
         temporizador2s          : in std_logic;                   -- Entrada del temporizador
         temporizador4s          : in std_logic;                   -- Entrada del temporizador
         dinero_devuelto         : out std_logic;                  -- Salida que reprenta que se ha devuelto el producto
-        enable_temporizador2s   : out std_logic;                  -- Salida para activar el temporizador de 2 segundos
-        enable_temporizador4s   : out std_logic;                  -- Salida para activar el temporizador de 4 segundos
+        reset_temporizador2s   : out std_logic;                  -- Salida para activar el temporizador de 2 segundos
+        reset_temporizador4s   : out std_logic;                  -- Salida para activar el temporizador de 4 segundos
         led_pro_entregado       : out std_logic;                  -- true producto entregado, 0 producto no entregado
         led_pro_ok              : out std_logic;                  -- true producto elegido correctamente
         led_trabajando          : out std_logic;                  -- true si la maquina está procesando, o bien esperando al pago, devolviendo o entregando producto
@@ -28,16 +28,16 @@ COMPONENT fsm is
 end COMPONENT;
 
     signal clk : std_logic := '0';
-    signal reset, producto_ok, dinero_ok, temporizador2s, temporizador4s, dinero_devuelto, enable_temporizador2s : std_logic;
-    signal enable_temporizador4s, led_pro_entregado, led_pro_ok, led_trabajando, led_dinero_dev, led_standby : std_logic;
+    signal reset, producto_ok, dinero_ok, temporizador2s, temporizador4s, dinero_devuelto, reset_temporizador2s : std_logic;
+    signal reset_temporizador4s, led_pro_entregado, led_pro_ok, led_trabajando, led_dinero_dev, led_standby : std_logic;
     --signal dinero : unsigned;
     constant CLK_PERIOD : time := 10 ns;
 begin
 
 uut: fsm port map (
     CLK => clk, reset => reset, producto_ok => producto_ok, dinero_ok => dinero_ok, temporizador2s => temporizador2s,
-    temporizador4s => temporizador4s, dinero_devuelto => dinero_devuelto, enable_temporizador2s => enable_temporizador2s, 
-    enable_temporizador4s => enable_temporizador4s, led_pro_entregado => led_pro_entregado, led_pro_ok => led_pro_ok, led_trabajando => led_trabajando,
+    temporizador4s => temporizador4s, dinero_devuelto => dinero_devuelto, reset_temporizador2s => reset_temporizador2s, 
+    reset_temporizador4s => reset_temporizador4s, led_pro_entregado => led_pro_entregado, led_pro_ok => led_pro_ok, led_trabajando => led_trabajando,
     led_dinero_dev => led_dinero_dev, led_standby => led_standby
 );
 

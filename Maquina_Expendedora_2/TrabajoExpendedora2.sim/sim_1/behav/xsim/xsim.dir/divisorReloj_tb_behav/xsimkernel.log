@@ -1,7 +1,0 @@
-Running: xsim.dir/divisorReloj_tb_behav/xsimk.exe -simmode gui -wdb divisorReloj_tb_behav.wdb -simrunnum 0 -socket 64783
-Design successfully loaded
-Design Loading Memory Usage: 6644 KB (Peak: 6644 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 15260 KB (Peak: 15260 KB)
-Simulation CPU Usage: 71483 ms

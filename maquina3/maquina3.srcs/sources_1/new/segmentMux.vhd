@@ -15,18 +15,18 @@ use ieee.std_logic_unsigned.all;
 
 entity segmentDriver is
   Port ( 
-  SW : in std_logic_vector(7 downto 0);
-  dinero_decenas : in std_logic_vector(3 downto 0);
-  dinero_centenas : in std_logic_vector(3 downto 0);
-  clk : in std_logic;
-  seven_segments : out std_logic_vector(6 downto 0);
-  punto : out std_logic;
-  select_SW1 : out std_logic;
-  select_SW2 : out std_logic;
-  select_decenas : out std_logic;
-  select_centenas : out std_logic;
-  select_unidades : out std_logic;
-  AN : out std_logic_vector(2 DOWNTO 0)
+  SW                : in std_logic_vector(7 downto 0);
+  dinero_decenas    : in std_logic_vector(3 downto 0);
+  dinero_centenas   : in std_logic_vector(3 downto 0);
+  clk               : in std_logic;
+  seven_segments    : out std_logic_vector(6 downto 0);
+  punto             : out std_logic;
+  select_SW1        : out std_logic;
+  select_SW2        : out std_logic;
+  select_decenas    : out std_logic;
+  select_centenas   : out std_logic;
+  select_unidades   : out std_logic;
+  AN                : out std_logic_vector(2 DOWNTO 0)
   );
 end segmentDriver;
 

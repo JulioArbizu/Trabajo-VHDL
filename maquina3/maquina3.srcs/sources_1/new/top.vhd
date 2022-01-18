@@ -20,7 +20,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity top is
     Port (
         CLK                 : in std_logic;                     -- Señal de reloj
-        reset               : in std_logic;                   -- Entrada reset activa a nivel alto
+        reset               : in std_logic;                     -- Entrada reset activa a nivel alto
         boton_central       : in std_logic;                     -- Utilaza para seleccion del producto y modo de pago con tarjeta
         moneda_10c          : in std_logic;                     -- Moneda 10 centimos
         moneda_20c          : in std_logic;                     -- Moneda 20 centimos
@@ -38,7 +38,7 @@ entity top is
         led_pro_entregado   : out std_logic;                    -- true producto entregado, 0 producto no entregado
         led_pro_ok          : out std_logic;                    -- true producto elegido correctamente
         led_trabajando      : out std_logic;                    -- true si la maquina está procesando, o bien esperando al pago, devolviendo o entregando producto
-        led_dinero_dev      : out std_logic;                     -- true si se ha devuelto correctamente el pago
+        led_dinero_dev      : out std_logic;                    -- true si se ha devuelto correctamente el pago
         led_standby         : out std_logic                     -- true si se esta en el estado de standby
      );
 end top;
@@ -49,8 +49,8 @@ architecture Behavioral of top is
 COMPONENT antirebotes is
     port(
     ------------------------------ ENTRADAS ----------------------------------------
-        CLK                     : in std_logic;                     -- Señal de reloj
-        reset_in             : in std_logic;                     -- Entrada reset activa a nivel bajo
+        CLK                    : in std_logic;                     -- Señal de reloj
+        reset_in               : in std_logic;                     -- Entrada reset activa a nivel bajo
         boton_central_in       : in std_logic;                     -- Utilaza para seleccion del producto y modo de pago con tarjeta
         moneda_10c_in          : in std_logic;                     -- Moneda 10 centimos
         moneda_20c_in          : in std_logic;                     -- Moneda 20 centimos
@@ -58,37 +58,37 @@ COMPONENT antirebotes is
         moneda_1e_in           : in std_logic;                     -- Moneda 1 euro
         --------------------------- SALIDAS -----------------------------------------
         reset_out              : out std_logic;                     
-        boton_central_out       : out std_logic;                     
-        moneda_10c_out          : out std_logic;                     
-        moneda_20c_out          : out std_logic;                     
-        moneda_50c_out          : out std_logic;                     
-        moneda_1e_out           : out std_logic
+        boton_central_out      : out std_logic;                     
+        moneda_10c_out         : out std_logic;                     
+        moneda_20c_out         : out std_logic;                     
+        moneda_50c_out         : out std_logic;                     
+        moneda_1e_out          : out std_logic
                         
     );      
 end COMPONENT;
 
 COMPONENT maquina is
     Port ( 
-    producto_ok : in std_logic;
-    dinero_ok : in std_logic;
-    clk : in std_logic;
-    clk_2Hz : in std_logic;
-    reset : in std_logic;
-    dinero_devuelto : out std_logic;
-    led_standby : out std_logic;
-    led_prod_entregado : out std_logic;
-    led_trabajando : out std_logic;
-    led_prod_ok : out std_logic;
-    led_dinero_dev : out std_logic  
+    producto_ok             : in std_logic;
+    dinero_ok               : in std_logic;
+    clk                     : in std_logic;
+    clk_2Hz                 : in std_logic;
+    reset                   : in std_logic;
+    dinero_devuelto         : out std_logic;
+    led_standby             : out std_logic;
+    led_prod_entregado      : out std_logic;
+    led_trabajando          : out std_logic;
+    led_prod_ok             : out std_logic;
+    led_dinero_dev          : out std_logic  
     );
 end COMPONENT;
 
 COMPONENT IntroducirProducto is
     Port (
-    clk : in std_logic;                             -- Señal de reloj
-    boton_central : in std_logic;                   -- Boton central, señal que llega desde el bloque antirebotes
-    SW : in std_logic_vector(7 downto 0);           -- Switches
-    producto_ok : out std_logic                    -- 1 si el producto es correcto, 0 si no es codigo BCD correcto
+    clk             : in std_logic;                     -- Señal de reloj
+    boton_central   : in std_logic;                     -- Boton central, señal que llega desde el bloque antirebotes
+    SW              : in std_logic_vector(7 downto 0);  -- Switches
+    producto_ok     : out std_logic                     -- 1 si el producto es correcto, 0 si no es codigo BCD correcto
     );
 end COMPONENT;
 
@@ -105,32 +105,32 @@ end COMPONENT;
 
 component  contarDinero is
 	port (
-      CLK:        in std_logic;
-      reset:      in std_logic;
-      moneda10c:  in std_logic;
-      moneda20c:  in std_logic;
-      moneda50c:  in std_logic;
-      moneda1e:   in std_logic; 
-	  dinero_ok:  out std_logic;
-      dinero_decenas:      out std_logic_vector (3 downto 0);
-      dinero_centenas:     out std_logic_vector (3 downto 0)
+      CLK               : in std_logic;
+      reset             : in std_logic;
+      moneda10c         : in std_logic;
+      moneda20c         : in std_logic;
+      moneda50c         : in std_logic;
+      moneda1e          : in std_logic; 
+	  dinero_ok         : out std_logic;
+      dinero_decenas    : out std_logic_vector (3 downto 0);
+      dinero_centenas   : out std_logic_vector (3 downto 0)
     );
 end component ;
 
 COMPONENT segmentDriver is
   Port ( 
-  SW : in std_logic_vector(7 downto 0);
-  dinero_decenas : in std_logic_vector(3 downto 0);
-  dinero_centenas : in std_logic_vector(3 downto 0);
-  clk : in std_logic;
-  seven_segments : out std_logic_vector(6 downto 0);
-  punto : out std_logic;
-  select_SW1 : out std_logic;
-  select_SW2 : out std_logic;
-  select_decenas : out std_logic;
-  select_centenas : out std_logic;
-  select_unidades : out std_logic;
-  AN              : out std_logic_vector(2 downto 0)
+  SW                : in std_logic_vector(7 downto 0);
+  dinero_decenas    : in std_logic_vector(3 downto 0);
+  dinero_centenas   : in std_logic_vector(3 downto 0);
+  clk               : in std_logic;
+  seven_segments    : out std_logic_vector(6 downto 0);
+  punto             : out std_logic;
+  select_SW1        : out std_logic;
+  select_SW2        : out std_logic;
+  select_decenas    : out std_logic;
+  select_centenas   : out std_logic;
+  select_unidades   : out std_logic;
+  AN                : out std_logic_vector(2 downto 0)
   );
 end COMPONENT;
  
